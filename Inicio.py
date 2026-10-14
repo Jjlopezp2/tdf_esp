@@ -1,17 +1,11 @@
 import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from streamlit_lottie import st_lottie
-import json
-
-with open('Alphabet A.json') as source:
-    animation=json. load(source)
 import pandas as pd
 import re
 from nltk.stem import SnowballStemmer
 
 st.title("🔍 Demo TF-IDF en Español")
-st.lottie(animation,width =350)
 
 # Documentos de ejemplo
 default_docs = """El perro ladra fuerte en el parque.
